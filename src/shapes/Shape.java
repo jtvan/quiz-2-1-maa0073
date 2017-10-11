@@ -9,7 +9,12 @@ public abstract class Shape implements Comparable<Shape> {
 	 * Also you need to finish implementing the Square and Circle classes.
 	 */
 	public int compareTo(Shape shape) {
-		// TODO Implement me
+		if(this.calculateArea() == shape.calculateArea()){
+			return 0; 
+		}
+		else if(this.calculateArea() > shape.calculateArea())
+			return 1;
+		else return -1;
 	}
 
 	public abstract double calculateArea();
