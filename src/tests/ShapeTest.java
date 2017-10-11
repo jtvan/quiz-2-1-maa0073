@@ -25,6 +25,7 @@ public class ShapeTest {
 		
 		Circle c1 = new Circle(4);
 		Circle c2 = new Circle(2);
+		
 		assertTrue(c1.compareTo(c1) == 0);
 		assertTrue(c1.compareTo(c2) == 1);
 		assertTrue(c2.compareTo(c1) == -1);

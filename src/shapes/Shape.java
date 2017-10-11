@@ -16,6 +16,7 @@ public abstract class Shape implements Comparable<Shape> {
 			return 1;
 		else return -1;
 	}
+	
 
 	public abstract double calculateArea();
 }
